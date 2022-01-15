@@ -11,9 +11,9 @@ type Props = {
 const Layout = ({ children, title = 'This is the default title' }: Props) => (
   <div
     style={{
-      minHeight: '100vh',
+      // minHeight: '100vh',
       position: 'relative',
-      paddingBottom: '120px',
+      // paddingBottom: '120px',
       boxSizing: 'border-box',
     }}
   >

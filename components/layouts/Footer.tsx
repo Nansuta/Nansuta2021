@@ -1,80 +1,102 @@
 import React from 'react'
 import Link from 'next/link'
-import { Box, Typography } from '@mui/material'
+// import { Box, Typography } from '@mui/material'
 
 export const Footer = () => {
   return (
-    <footer style={{ position: 'absolute', bottom: '0', marginBottom: '-8px' }}>
-      <Box
-        sx={{
-          bgcolor: '#2d2d2d',
-          height: '120px',
-          width: '100vw',
-          margin: '0 -0.4%',
+    <footer style={{}}>
+      <div
+        style={{
+          maxWidth: '100%',
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          paddingTop: '2.5rem',
+          paddingBottom: '2.5rem',
+          backgroundColor: '#0F0E0E',
         }}
       >
-        <Typography
-          variant="body1"
-          component="div"
-          sx={{
-            flexGrow: 1,
-            color: '#fff',
-            padding: '15px',
-            textAlign: 'center',
+        <div
+          style={{
+            marginTop: '1rem',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            fontSize: '0.875rem',
+            lineHeight: '1.25rem',
           }}
         >
-          <Link href="/">
-            <a
+          <p style={{ order: 2, marginTop: '2rem', color: '#EEEEEE' }}>
+            {' '}
+            &copy; Nansuta 2021.{' '}
+          </p>
+          <div style={{ order: 1, color: '#EEEEEE' }}>
+            <span style={{ paddingLeft: '0.75rem', paddingRight: '0.75rem' }}>
+              <Link href="/">
+                <span
+                  style={{
+                    textDecoration: 'none',
+                    color: 'inherit',
+                    cursor: 'pointer',
+                  }}
+                >
+                  Top
+                </span>
+              </Link>
+            </span>
+            <span
               style={{
-                textDecoration: 'none',
-                color: 'inherit',
-                margin: '15px',
+                paddingLeft: '0.75rem',
+                paddingRight: '0.75rem',
+                borderLeftWidth: '1px',
               }}
             >
-              Top
-            </a>
-          </Link>
-          {' | '}
-          <Link href="/youtube">
-            <a
+              <Link href="/youtube">
+                <span
+                  style={{
+                    textDecoration: 'none',
+                    color: 'inherit',
+                    cursor: 'pointer',
+                  }}
+                >
+                  Youtube
+                </span>
+              </Link>
+            </span>
+            <span
               style={{
-                textDecoration: 'none',
-                color: 'inherit',
-                margin: '15px',
+                paddingLeft: '0.75rem',
+                paddingRight: '0.75rem',
+                borderLeftWidth: '1px',
               }}
             >
-              YouTube
-            </a>
-          </Link>
-          {' | '}
-          <Link href="/blog">
-            <a
-              style={{
-                textDecoration: 'none',
-                color: 'inherit',
-                margin: '15px',
-              }}
-            >
-              Blog
-            </a>
-          </Link>
-          {' | '}
-          <Link href="/contact">
-            <a
-              style={{
-                textDecoration: 'none',
-                color: 'inherit',
-                margin: '15px',
-              }}
-            >
-              Contact
-            </a>
-          </Link>
-          <br />
-          <p>© Nansuta 2021</p>
-        </Typography>
-      </Box>
-      {/* </Container> */}
+              <Link href="/blog">
+                <span
+                  style={{
+                    textDecoration: 'none',
+                    color: 'inherit',
+                    cursor: 'pointer',
+                  }}
+                >
+                  Blog
+                </span>
+              </Link>
+            </span>
+            <span style={{ paddingLeft: '0.75rem', paddingRight: '0.75rem' }}>
+              <Link href="/contact">
+                <span
+                  style={{
+                    textDecoration: 'none',
+                    color: 'inherit',
+                    cursor: 'pointer',
+                  }}
+                >
+                  Coontact
+                </span>
+              </Link>
+            </span>
+          </div>
+        </div>
+      </div>
     </footer>
   )
 }
